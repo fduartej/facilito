@@ -11,9 +11,9 @@ const Card = (category, srcimagen, title, description, precio) => {
   );
 };
 
-const CardList = ({ data }) => (
+const CardList = ({ carsData }) => (
   <div class="content-section">
-    {data.map((card, index) => (
+    {carsData.map((card, index) => (
       <Card
         category={card.category}
         srcimagen={card.src}

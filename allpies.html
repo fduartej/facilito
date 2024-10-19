@@ -21,14 +21,34 @@
   <body>
     <div id="root"></div>
     <script type="text/babel" src="script.js"></script>
+    <script type="text/babel" src="script.card.js"></script>
     <script type="text/babel">
-      const App = () => {
-        return (
-          <div>
-            <Navigation />
-          </div>
-        );
-      };
+      class App extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = {
+            cardsData: [],
+          };
+        }
+
+        componentDidMount() {
+          fetch("./data.pies.json")
+            .then((response) => response.json())
+            .then((data) => {
+              this.state({ cardsData: data });
+            })
+            .catch((error) => console.error("hay un error", error));
+        }
+
+        render() {
+          return (
+            <div>
+              <Navigation />
+              <CardList carsData={this.state.cardsData} />
+            </div>
+          );
+        }
+      }
       const root = ReactDOM.createRoot(document.getElementById("root"));
       root.render(<App />);
     </script>
