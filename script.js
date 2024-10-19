@@ -10,7 +10,7 @@ const Navigation = () => {
           <a href="index.html">Home</a>
         </li>
         <li>
-          <a href="#">All pies</a>
+          <a href="allpies.html">All pies</a>
         </li>
         <li>
           <a href="contacto.html">Contact</a>
