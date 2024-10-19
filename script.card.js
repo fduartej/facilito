@@ -1,3 +1,5 @@
+import React from "react";
+
 const Card = (category, srcimagen, title, description, precio) => {
   return (
     <div class="pieRow" data-category={category}>

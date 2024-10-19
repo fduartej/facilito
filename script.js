@@ -1,3 +1,5 @@
+import React from "react";
+
 const Welcome = () => {
   return <h1>Hello World</h1>;
 };
@@ -22,3 +24,5 @@ const Navigation = () => {
     </nav>
   );
 };
+
+export default Navigation;
