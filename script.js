@@ -1,10 +1,10 @@
 import React from "react";
 
-const Welcome = () => {
+export const Welcome = () => {
   return <h1>Hello World</h1>;
 };
 
-const Navigation = () => {
+export const Navigation = () => {
   return (
     <nav>
       <ul>
@@ -24,5 +24,3 @@ const Navigation = () => {
     </nav>
   );
 };
-
-export default Navigation;
