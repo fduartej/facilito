@@ -1,0 +1,20 @@
+[
+  {
+    "category": "cheesecake",
+    "title": "Rhubarb Pie",
+    "price": "$21.95",
+    "src": "../images/products/rhubarbpiesmall.jpg"
+  },
+  {
+    "category": "cheesecake",
+    "title": "Strawberry Pie",
+    "price": "$18.95",
+    "src": "../images/products/strawberrypiesmall.jpg"
+  },
+  {
+    "category": "cheesecake",
+    "title": "Strawberry Cheese Cake",
+    "price": "$18.95",
+    "src": "../images/products/strawberrycheesecakesmall.jpg"
+  }
+]
