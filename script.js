@@ -1,10 +1,8 @@
-import React from "react";
-
-export const Welcome = () => {
+const Welcome = () => {
   return <h1>Hello World</h1>;
 };
 
-export const Navigation = () => {
+const Navigation = () => {
   return (
     <nav>
       <ul>
