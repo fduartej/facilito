@@ -1,5 +1,5 @@
 const Welcome = () => {
-  return <h1>Hello World</h1>;
+  return <h1 class="font-sans text-sky-400">Hello World</h1>;
 };
 
 const Navigation = () => {
