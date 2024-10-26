@@ -1,18 +1,22 @@
 const Card = ({ category, srcimagen, title, description, price }) => {
   return (
-    <div class="pieRow" data-category={category}>
-      <img src={srcimagen} width="100" height="63" class="pie-img" />
-      <div>
-        <h5 class="pie-title">{title}</h5>
-        <p class="pie-description">{description}</p>
+    <div className="flex items-center p-4 bg-white rounded-lg shadow-md space-x-4">
+      <img
+        src={srcimagen}
+        alt={title}
+        className="w-24 h-24 object-cover rounded"
+      />
+      <div className="flex-1">
+        <h5 className="text-lg font-bold text-gray-800">{title}</h5>
+        <p className="text-sm text-gray-600">{description}</p>
+        <small className="text-blue-600 font-semibold">{price}</small>
       </div>
-      <small class="pie-price">{price}</small>
     </div>
   );
 };
 
 const CardList = ({ cardsData }) => (
-  <div class="content-section">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
     {cardsData.map((card, index) => (
       <Card
         key={index}
