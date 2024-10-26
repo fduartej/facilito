@@ -4,19 +4,27 @@ const Welcome = () => {
 
 const Navigation = () => {
   return (
-    <nav>
-      <ul>
+    <nav style={{ backgrounColor: "#D4C1E0" }} className="p-4">
+      <ul className="flex space-x-4 justify-center">
         <li>
-          <a href="index.html">Home</a>
+          <a href="index.html" className="text-white hover:text-blue-400">
+            Home
+          </a>
         </li>
         <li>
-          <a href="allpies.html">All pies</a>
+          <a href="allpies.html" className="text-white hover:text-blue-400">
+            All pies
+          </a>
         </li>
         <li>
-          <a href="contacto.html">Contact</a>
+          <a href="contacto.html" className="text-white hover:text-blue-400">
+            Contact
+          </a>
         </li>
         <li>
-          <a href="about.html">About</a>
+          <a href="about.html" className="text-white hover:text-blue-400">
+            About
+          </a>
         </li>
       </ul>
     </nav>
