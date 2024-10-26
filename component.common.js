@@ -4,6 +4,7 @@ const Welcome = () => {
       <img
         src="https://firebasestorage.googleapis.com/v0/b/facilitomedia.appspot.com/o/imagenes%2Fbethany-fullsize.jpg?alt=media&token=69709a75-e68b-4734-a9bd-f060a6572d26"
         alt="brettany"
+        loading="lazy"
         className="mx-auto mb-4 rounded-lg shadow-md w-1/2"
       />
       <p className="text-gray-700 text-lg">

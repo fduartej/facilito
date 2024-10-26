@@ -5,6 +5,7 @@ const Card = ({ category, srcimagen, title, description, price }) => {
         src={srcimagen}
         alt={title}
         className="w-24 h-24 object-cover rounded"
+        loading="lazy"
       />
       <div className="flex-1">
         <h5 className="text-lg font-bold text-gray-800">{title}</h5>
